@@ -18,10 +18,11 @@ if __name__ == "__main__":
     print("Loading data")
     train_X, test_X, train_y, test_y = load_train_test()
     print("Extracting features(TFDF)")
-    tfdf = TfidfVectorizer(analyzer="word", ngram_range=(1, 3))  # Get Tf-idf object and save it as vect. We can select features from here we just have simply change
-    tfdf.fit(train_X)  # fit or traing data tweets to vect
-    X_train_dtm = tfdf.transform(train_X)  # transform our training data tweets
-    X_test_dtm = tfdf.transform(test_X)  # transform our testing data tweets
+    # Get Tf-idf object: Feature extracting
+    tfdf = TfidfVectorizer(analyzer="word", ngram_range=(1, 3))
+    tfdf.fit(train_X)  # fit or traing data
+    X_train_dtm = tfdf.transform(train_X)  # transform our training data
+    X_test_dtm = tfdf.transform(test_X)  # transform our testing data
     train_X, test_X = None, None
 
     print("Training logistic regression")

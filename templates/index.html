@@ -8,7 +8,7 @@
 <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-  
+
 </head>
 
 <body style="background: #000;">
@@ -25,14 +25,26 @@
 
    <br>
    <br>
-   {{ prediction_text }}
-
-   {% for comment in predict_comments %}
-     	<h1>comment.text</h1>
-        <h1>comment.predict</h1>
-   {% endfor %}
-
+     {% if content %}
+         {{ content.prediction_text }}
+        <p style="color:green"> You have {{ content.positive }} positive comments.</p>
+         <p style="color:red"> You have {{ content.negative }} negative comments.</p>
+     {% endif %}
+    <div >
+        {% if content %}
+            <p > List of comments:</p>
+           {% for comment in content.comments %}
+                {% if comment.predict == 1 %}
+                        <p style="color:green">{{comment.text}}</p>
+                    {% else %}
+                        <p style="color:red">{{comment.text}}</p>
+                    {% endif %}
+           {% endfor %}
+        {% endif %}
+    </div>
  </div>
+
+
 
 
 </body>

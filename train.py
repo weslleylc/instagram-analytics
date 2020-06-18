@@ -17,7 +17,6 @@ def fit_naivebayes(X_train, y_train, X_test, y_test, batch=10000):
 if __name__ == "__main__":
     print("Loading data")
     train_X, test_X, train_y, test_y = load_train_test()
-
     print("Extracting features(TFDF)")
     tfdf = TfidfVectorizer(analyzer="word", ngram_range=(1, 3))  # Get Tf-idf object and save it as vect. We can select features from here we just have simply change
     tfdf.fit(train_X)  # fit or traing data tweets to vect

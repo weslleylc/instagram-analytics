@@ -8,6 +8,4 @@ __pycache__/
 /data/
 /cache/
 .idea/
-
-
-
+/env/

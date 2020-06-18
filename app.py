@@ -1,13 +1,11 @@
-import numpy as np
 from flask import Flask, request, jsonify, render_template
-from flask_bootstrap import Bootstrap
-import pickle
+import joblib
 from processing import preprocess_sentence
 import instaloader
 
 app = Flask(__name__, template_folder="templates/")
-bootstrap = Bootstrap(app)
-cache = pickle.load(open('./cache/predict_param.pickle', 'rb'))
+cache = joblib.load(open('./cache/predict_param.pickle', 'rb'))
+
 model = cache['clf']
 tfdf = cache['tfdf']
 

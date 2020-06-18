@@ -1,10 +1,9 @@
 import os
-import pickle
+import joblib
 import pandas as pd
 import numpy as np
 import warnings
 from processing import preprocess_sentence
-
 
 def load_data(dataset_path, sample_percent=100, shuffle=True, encoding = "ISO-8859-1",
               columns=["target", "ids", "date", "flag", "user", "text"]):
@@ -40,7 +39,7 @@ def load_train_test(train_path="./data/training.1600000.processed.noemoticon.csv
     if cache_file is not None:
         try:
             with open(os.path.join(cache_dir, cache_file), "rb") as f:
-                cache_data = pickle.load(f)
+                cache_data = joblib.load(f)
             print("Read preprocessed data from cache file:", cache_file)
         except:
             pass  # unable to read from cache, but that's okay
@@ -55,7 +54,8 @@ def load_train_test(train_path="./data/training.1600000.processed.noemoticon.csv
             cache_data = dict(words_train=words_train, words_test=words_test,
                               labels_train=labels_train, labels_test=labels_test)
             with open(os.path.join(cache_dir, cache_file), "wb") as f:
-                pickle.dump(cache_data, f)
+                joblib.dump(cache_data, f)
+
             print("Wrote preprocessed data to cache file:", cache_file)
     else:
         # Unpack data loaded from cache file

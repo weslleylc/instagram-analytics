@@ -48,7 +48,7 @@ Let's text our application. First get the code of a post on instagram.
 
 Now you need to paste the code and inform the number of comments you want to analyze
 
-![alt text](https://github.com/weslleylc/instagram-analytics/blob/master/static/post.jpg)
+![alt text](https://github.com/weslleylc/instagram-analytics/blob/master/static/post.png)
 
 You can see the results below
 

@@ -1,5 +1,4 @@
-# instagram-analytics
-=================
+# Sentiment Analysis
 
 Basic application to analyzer the sentiment's of Instagram comments for a specific post.
 

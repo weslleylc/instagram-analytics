@@ -16,7 +16,7 @@ Create virtualenv:
     source venv/bin/activate
     pip install -r requirements.txt
 
-Download the data
+Download the data and put on the "data" folder
 
      [Sentiment140 Details](http://help.sentiment140.com/for-students)
      [Google Drive](https://docs.google.com/file/d/0B04GJPshIjmPRnZManQwWEdTZjg/edit)

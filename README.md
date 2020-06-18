@@ -1,5 +1,4 @@
-# instagram-analytics
-=================
+# Sentiment Analysis
 
 Basic application to analyzer the sentiment's of Instagram comments for a specific post.
 
@@ -17,7 +16,7 @@ Create virtualenv:
     source venv/bin/activate
     pip install -r requirements.txt
 
-Download the data
+Download the data and put on the "data" folder
 
      [Sentiment140 Details](http://help.sentiment140.com/for-students)
      [Google Drive](https://docs.google.com/file/d/0B04GJPshIjmPRnZManQwWEdTZjg/edit)
@@ -48,7 +47,7 @@ Let's text our application. First get the code of a post on instagram.
 
 Now you need to paste the code and inform the number of comments you want to analyze
 
-![alt text](https://github.com/weslleylc/instagram-analytics/blob/master/static/post.jpg)
+![alt text](https://github.com/weslleylc/instagram-analytics/blob/master/static/post.png)
 
 You can see the results below
 

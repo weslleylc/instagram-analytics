@@ -23,7 +23,7 @@ Train your model
 
     python train.py
     
-or donwload the cache data [cache](https://drive.google.com/file/d/1-uTtVVsNPcUAKWvEX5aiH4QhN9RgG1Zq/view?usp=sharing)
+or donwload the [cache](https://drive.google.com/file/d/1-uTtVVsNPcUAKWvEX5aiH4QhN9RgG1Zq/view?usp=sharing) data
 
 Run the sample server 
     python app.py
@@ -38,7 +38,7 @@ or open the web application:
   
     http://127.0.0.1:5000/
 
-Let's text our application. First get the code of a post on instagram.
+Let's test our application. First get the code of a post on instagram.
 
 ![alt text](https://github.com/weslleylc/instagram-analytics/blob/master/static/trump.png)
     

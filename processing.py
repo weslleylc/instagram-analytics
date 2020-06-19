@@ -62,6 +62,8 @@ contraction_mapping = {"ain't": "is not", "aren't": "are not","can't": "cannot",
 
 
 def preprocess_sentence(text):
+	# remove html tags
+    text = BeautifulSoup(text.encode('utf8'), "html.parser").get_text()
     # convert the text to lower case
     text.lower()
     # convert all urls to sting "URL"
@@ -72,8 +74,7 @@ def preprocess_sentence(text):
     text = re.sub('[\s]+', ' ', text)
     # convert "#topic" to just "topic"
     text = re.sub(r'#([^\s]+)', r'\1', text)
-    # remove html tags
-    text = BeautifulSoup(text, "html.parser").get_text()
+    
 
     # split emojis
     text = emoji.get_emoji_regexp().split(text)

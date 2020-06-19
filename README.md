@@ -53,4 +53,15 @@ You can see the results below
 
 
 # References
-https://github.com/abhinavsagar/machine-learning-deployment
+[https://github.com/abhinavsagar/machine-learning-deployment
+](https://github.com/abhinavsagar/machine-learning-deployment
+)
+
+[https://www.kaggle.com/mistryjimit26/twitter-sentiment-analysis-basic
+](https://www.kaggle.com/mistryjimit26/twitter-sentiment-analysis-basic
+)
+
+[https://www.kaggle.com/paoloripamonti/twitter-sentiment-analysis
+](https://www.kaggle.com/paoloripamonti/twitter-sentiment-analysis
+)
+

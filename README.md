@@ -16,21 +16,19 @@ Create virtualenv:
     source venv/bin/activate
     pip install -r requirements.txt
 
-Download the data and put on the "data" folder
-
-     [Sentiment140 Details](http://help.sentiment140.com/for-students)
-     [Google Drive](https://docs.google.com/file/d/0B04GJPshIjmPRnZManQwWEdTZjg/edit)
+Download the data and put on the "data" folder at [Sentiment140 Details](http://help.sentiment140.com/for-students) or [Google Drive](https://docs.google.com/file/d/0B04GJPshIjmPRnZManQwWEdTZjg/edit)
 
     
 Train your model
 
     python train.py
+    
+or donwload the cache data [cache](https://drive.google.com/file/d/1-uTtVVsNPcUAKWvEX5aiH4QhN9RgG1Zq/view?usp=sharing)
 
-Run the sample server
-
+Run the sample server 
     python app.py
     
-![alt text](https://github.com/weslleylc/instagram-analytics/blob/master/static/instagram.jpg)
+    ![alt text](https://github.com/weslleylc/instagram-analytics/blob/master/static/instagram.jpg)
 
 Try the endpoints
 

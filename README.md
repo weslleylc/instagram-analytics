@@ -28,7 +28,7 @@ or donwload the cache data [cache](https://drive.google.com/file/d/1-uTtVVsNPcUA
 Run the sample server 
     python app.py
     
-    ![alt text](https://github.com/weslleylc/instagram-analytics/blob/master/static/instagram.jpg)
+![alt text](https://github.com/weslleylc/instagram-analytics/blob/master/static/instagram.jpg)
 
 Try the endpoints
 
